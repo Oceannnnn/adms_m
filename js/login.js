@@ -18,15 +18,16 @@ $('#signBtn').click(function() {
 				withCredentials: true
 			},
 			success: function (res)  {
-				if(res.roles[0] == "ROLE_SUPERIOR") {
-					saveUserInfo();
-					sessionStorage.setItem("username", userName); //将userName存储到username字段
-					sessionStorage.setItem("password", passWord);                        
-					window.location.href = "./main.html?vconsole=show"; //如果登录成功则跳到界面
-				} else {
-					$('#login-prompt').modal('open');
-					$('#login-prompt .am-modal-hd').text("您没有权限哦!")
-				}                                   
+// 				if(res.roles[0] == "ROLE_SUPERIOR") {
+// 					saveUserInfo();
+// 					sessionStorage.setItem("username", userName); //将userName存储到username字段
+// 					sessionStorage.setItem("password", passWord);                        
+// 					window.location.href = "./main.html?vconsole=show"; //如果登录成功则跳到界面
+// 				} else {
+// 					$('#login-prompt').modal('open');
+// 					$('#login-prompt .am-modal-hd').text("您没有权限哦!")
+// 				}   
+				window.location.href = "./main.html?vconsole=show"; //如果登录成功则跳到界面
 			},
 			error: function (msg)  {
 					$('#login-prompt').modal('open');
