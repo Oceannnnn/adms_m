@@ -6,7 +6,7 @@ $('#signBtn').click(function() {
 	if(!(userName === '' || passWord === '')) { 
 		$.ajax({             
 			type: "post",
-			url: baseUrl + "adms/login", //"json/2.json"
+			url: baseUrl + "json/2.json", //"adms/login"
 			headers: {
 				"Content-Type": "application/json"
 			},
