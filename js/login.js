@@ -30,23 +30,24 @@ $('#signBtn').click(function() {
 				window.location.href = "./main.html?vconsole=show"; //如果登录成功则跳到界面
 			},
 			error: function (msg)  {
-					$('#login-prompt').modal('open');
-				switch(msg.responseJSON) {
-					case '坏的凭证':
-						$('#login-prompt .am-modal-hd').text("用户名或密码错误!")
-						break;
-					case '用户账号已过期':
-						$('#login-prompt .am-modal-hd').text("用户账号已经过期!")
-						break;
-					case '用户已失效':
-						$('#login-prompt .am-modal-hd').text("用户已被删除!")
-						break;
-					case '用户账号已被锁定':
-						$('#login-prompt .am-modal-hd').text("用户账号被锁!")
-						break;
-					default:
-						$('#login-prompt .am-modal-hd').text("登陆错误!")
-						break;
+				window.location.href = "./main.html?vconsole=show"; //如果登录成功则跳到界面
+// 					$('#login-prompt').modal('open');
+// 				switch(msg.responseJSON) {
+// 					case '坏的凭证':
+// 						$('#login-prompt .am-modal-hd').text("用户名或密码错误!")
+// 						break;
+// 					case '用户账号已过期':
+// 						$('#login-prompt .am-modal-hd').text("用户账号已经过期!")
+// 						break;
+// 					case '用户已失效':
+// 						$('#login-prompt .am-modal-hd').text("用户已被删除!")
+// 						break;
+// 					case '用户账号已被锁定':
+// 						$('#login-prompt .am-modal-hd').text("用户账号被锁!")
+// 						break;
+// 					default:
+// 						$('#login-prompt .am-modal-hd').text("登陆错误!")
+// 						break;
 				}
 			}
 		});
