@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>ADMS</title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="lib/amazeui/css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="login">
+			<div class='frosted-glass'></div>
+			<div class="login-con">
+				<div class="am-modal am-modal-prompt" tabindex="-1" id="login-prompt">
+					<div class="am-modal-dialog">
+						<div class="am-modal-hd"></div>
+						<div class="am-modal-footer" style="border-top: 1px solid #dedede;">
+							<span class="am-modal-btn">确定</span>
+						</div>
+					</div>
+				</div>
+				<img src="img/logo.png" class="am-center pic5" />
+				<p class="login-title">GIMC13投放汇总系统</p>
+				<div class="login-form">
+					<form action="" class="am-form" id="doc-vld-msg">
+						<fieldset>
+							<div class="am-form-group">
+								<input type="text" id="userName" placeholder="输入用户名" data-validation-message="亲~您的账号呢？？" required/>
+							</div>
+
+							<div class="am-form-group">
+								<input type="password" id="passWord" data-validation-message="把密码交出来~" placeholder="輸入密码" required/>
+							</div>
+
+							<label class="am-checkbox">
+					      <input type="checkbox" value="" data-am-ucheck id="rmbUser" > 记住密码
+					    </label>
+							<button class="am-btn am-btn-secondary am-btn-block" type="button" id="signBtn">登录</button>
+							<span class="help-block"></span>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body </html>
+	<script src="lib/jq/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/amazeui/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/set/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>

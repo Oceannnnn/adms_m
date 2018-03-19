@@ -1,0 +1,92 @@
+.login {
+	background: url(../img/bg1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.frosted-glass{  
+    background: inherit;  
+    -webkit-filter: blur(2px);  
+    -moz-filter: blur(2px);  
+    -ms-filter: blur(2px);  
+    -o-filter: blur(2px);  
+    filter: blur(2px);  
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false); 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+fieldset {
+	margin: 0;
+}
+
+.login-con {
+    width: 90%;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 5%;
+    top: 16%;
+    padding: 5%;
+    background: rgba(119, 117, 117, 0.2);
+    border-radius: 2px;
+    box-shadow: -2.5px 6.794px 13px 0px rgba( 0, 0, 0 ,0.2);
+}
+.login-con img{
+	width: 42%;
+}
+.login-form {
+	width: 100%;
+	padding: 12px 5px 8px;
+	background: #fff;
+	margin-top: 10px;
+	position: relative;
+}
+p.login-title {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.help-block {
+	color: red;
+	display: block;
+	margin-top: 10px;
+}
+
+#vld-tooltip {
+	position: absolute;
+	z-index: 1000;
+	padding: 5px 10px;
+	background: #F37B1D;
+	min-width: 150px;
+	color: #fff;
+	transition: all 0.15s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+	display: none;
+}
+
+#vld-tooltip:before {
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	content: "";
+	border-width: 0 8px 8px;
+	border-color: transparent transparent #F37B1D;
+	border-style: none inset solid;
+}
+
+button#signBtn {
+	background-color: #f0506e;
+	border-color: #f0506e;
+}
+
+.am-ucheck-checkbox:checked+.am-ucheck-icons,
+.am-ucheck-radio:checked+.am-ucheck-icons {
+	color: #f0506e;
+}
+.am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-ucheck-radio:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons{
+	color: #f0506e;
+}

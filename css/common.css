@@ -1,0 +1,346 @@
+.am-alert-danger
+/* 通用样式 */
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Tahoma', 'Arial', 'Roboto', "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+	font-size: 14px!important;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	background: #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline: 0;
+}
+
+.pic5 {
+	width: 50%;
+}
+
+.pic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.pic2 {
+	width: 80%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1190;
+}
+
+.headerbox {
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	background-color: #f0506e;
+	z-index: 3;
+}
+
+.headerbox .title {
+	height: 45px;
+	font: normal 16px/45px arial;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn-topbar-left {
+	left: 0;
+}
+
+.btn-topbar-left,
+.btn-topbar-right {
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	top: 0;
+}
+
+.btn-topbar-right {
+	right: 0;
+}
+
+.btn-topbar-left a,
+.btn-topbar-right a {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 55px;
+}
+
+.db {
+	display: block;
+}
+
+.am-icon-angle-left:before {
+	font-size: 2.6rem;
+}
+
+.am-icon-navicon:before,
+.am-icon-reorder:before,
+.am-icon-bars:before,
+.am-icon-gear:before,
+.am-icon-ellipsis-h:before {
+	font-size: 2.0rem;
+}
+.am-active .am-btn-secondary.am-dropdown-toggle, .am-btn-secondary.am-active, .am-btn-secondary:active{
+	background: #f0506e;
+}
+
+a {
+	color: #333;
+}
+
+.pr {
+	position: relative;
+}
+
+.mr_5 {
+	margin-right: 5px;
+}
+
+.mb_5 {
+	margin-bottom: 5px;
+}
+
+.pb_5 {
+	padding-bottom: 5px;
+}
+
+.am-modal-dialog{
+	margin-top: -40px;
+}
+.am-btn {
+	font-size: 1.4rem;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.am-modal-dialog {}
+
+.dis_ib {
+	display: inline-block;
+	width: 100%;
+}
+
+.bor_bom {
+	margin: 1.5rem 7%;
+}
+
+.oh {
+	overflow: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.p_lr10 {
+	padding: 0 10px;
+}
+
+[class*="am-u-"] {
+	padding: 0;
+}
+
+.am-list>li {
+	background-color: initial;
+	border: none;
+	border-width: 1px 0;
+}
+
+.c_f {
+	color: #FFFFFF;
+}
+
+.am-btn-secondary,
+.am-btn-primary {
+	background-color: #f0506e;
+	border-color: #f0506e;
+}
+
+.am-btn-danger {
+	background-color: #f0506e;
+	border-color: #f0506e;
+}
+
+.am-form-group,
+.am-modal-bd {
+	margin: 0.5rem 0 0;
+	padding: 0;
+}
+
+*+.am-alert {
+	margin-top: 0;
+}
+
+.am-alert {
+	padding: 0.25em;
+}
+
+.am-alert-danger {
+	background-color: #f0506e;
+	border-color: #f0506e;
+	margin: 10px 0 0;
+}
+
+.scroll-wrap {
+	margin-top: -1px;
+}
+
+#list-tabs a {
+	font-size: 1.5rem;
+}
+
+#sidebar {
+	z-index: 9999;
+}
+
+.am-tabs-bd {
+	overflow: inheri;
+}
+
+#add-modal .am-modal-hd {
+	padding: 0 7% 1.5rem;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+#add-modal .choose_more {
+	padding: 1.5rem 0 1rem;
+}
+
+#add-modal .am-modal-bd {
+	padding: 0 4%;
+	margin: 0 0 1rem;
+	border-bottom: 1px solid #ccc;
+	min-height: 200px;
+}
+
+#add-modal .am-modal-fr {
+	overflow: hidden;
+	padding-right: 1rem;
+}
+
+.add-modal-btns {
+	overflow: hidden;
+	padding: 0 1rem;
+}
+
+.add-modal-btns button,
+.am-modal-fr button {
+	position: relative;
+	font-size: 1.5rem;
+	font-weight: bold !important;
+}
+
+.add-modal-btns button:active,
+.am-modal-fr button:active {
+	box-shadow: none;
+}
+
+.add-modal-btns button::after,
+.am-modal-fr button::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 44%;
+	background-color: currentColor;
+	height: 100%;
+	width: 12%;
+	border-radius: 0.75em / 2em;
+	-webkit-transition: width 0.2s, height 0.2s, border-radius 0.2s, left 0.2s, top 0.2s, opacity 0.1s;
+	transition: width 0.2s, height 0.2s, border-radius 0.2s, left 0.2s, top 0.2s, opacity 0.1s;
+	text-align: center;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.add-modal-btns button:active::after,
+.am-modal-fr button:active::after {
+	width: 100% !important;
+	left: 0;
+	top: 0 !important;
+	height: 100% !important;
+	opacity: 0.12;
+}
+
+#click_create {
+	background: transparent;
+	color: #f0506e;
+	border: 0;
+	border-color: rgba(153, 153, 153, 0.4);
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#revise-btn {
+	margin-top: 3rem;
+}
+
+.am-tab-panel {
+	width: 100%;
+	height: 100%;
+}
+
+#nprogress .nprogress-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	width: 100%;
+	height: 2px;
+	background: #5eb95e;
+}
+
+#nprogress .nprogress-spinner {
+	position: absolute;
+}
+
+#Table_data thead {
+	display: block;
+	width: 100%;
+}
+
+#Table_data tbody {
+	overflow: auto;
+	display: block;
+	overflow: auto;
+	width: 100%;
+}
+
+#main-line,
+#main-pie {
+	display: none;
+}
