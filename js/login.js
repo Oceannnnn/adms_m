@@ -48,7 +48,7 @@ $('#signBtn').click(function() {
 // 					default:
 // 						$('#login-prompt .am-modal-hd').text("登陆错误!")
 // 						break;
-				}
+// 				}
 			}
 		});
 	} else {
